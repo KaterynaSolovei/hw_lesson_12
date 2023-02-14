@@ -2,3 +2,19 @@ img {
   margin: auto;
   width: 80px;
 }
+
+.accordion-button {
+  &:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none,
+  }
+}
+
+.form-control {
+  &:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none,
+  }
+}

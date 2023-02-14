@@ -7,21 +7,19 @@
   <title>Bootstrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-  <div class="bg-danger-subtle mb-4 row">
-
-    <div class="pt-5 col">
+  <header class="bg-danger-subtle mb-4 row">
+    <div class="pt-4 col px-0">
       <div class="py-4 text-center text-dark fs-1 text fw-bold">DONUT HIVE</div>
-
-      <nav class="navbar navbar-expand-lg text-white" data-bs-theme="dark" style="background-color: #9f416f;">
+      <nav class="navbar navbar-expand-lg text-white mx-0" data-bs-theme="dark" style="background-color: #9f416f;">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="assets/img/IMG_1060.PNG" alt="img">
-          </a>
+            <img src="assets/img/IMG_1060.PNG" alt="img"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
             aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -61,12 +59,15 @@
         </div>
       </nav>
     </div>
-  </div>
+  </header>
 
   <main class="container">
     <div class="row">
-      <div class="col-xxl-7 col-lg-12">
-        <div class="accordion" id="accordionExample">
+      <div class="col-xxl-7 col-lg-12 pb-4">
+        <p class="fs-4 text-center">WELCOME TO DONUT HIVE</p>
+        <p class="fs-6 text-center">Pick-up available: Mon-Sun at Yorkdale Mall, Sherway Gardens & 724 Lakeshore Rd E
+        </p>
+        <div class="accordion" id="accordionSection">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button bg-danger-subtle text-dark" type="button" data-bs-toggle="collapse"
@@ -74,23 +75,19 @@
                 About us
               </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample">
+            <div id="collapseOne" class="accordion-collapse collapse border-danger" aria-labelledby="headingOne"
+              data-bs-parent="#accordionSection">
               <div class="accordion-body">
                 <strong>The predecessor of “Donut Hive, the Donut Patisserie” was launched in April 2018.</strong>
                 <p>Our main goal today is to introduce to you our premium donuts of the highest quality which are much
-                  more than plain donuts. In preparing our donuts, we paid particular attention to our carefully chosen
-                  high quality ingredients
-                  to offer you an exceptional flavour treat when enjoying our donuts.</p>
-                <p>We prepare our jams with the best quality fruit without preservatives, flavour enhancers, artificial
-                  colours, or GMO's.</p>
-                <p>We opened our first store in April 2019 at Square One in Mississauga, our second store in the RBC
-                  Path in downtown Toronto. At the same time, our POPUP stores opened at Pusateri's downtown, Fifth
-                  Avenue in the Bay-Saks Fifth Avenue location and at Pusateri's Bayview Village.</p>
-                <p>In August 2019 Yorkdale Mall offered us a rental unit having noted our successes. By March 15th,
-                  2020, we were ready to welcome our customers at our third store at Yorkdale. Unfortunately, we all
-                  know what else has happened in the spring of 2020, so our flagship store in Yorkdale Mall did not have
-                  the chance to steal the hearts of local donut lovers up until November, 2021.</p>
+                  more than plain donuts. In preparing our donuts, we paid particular attention to our carefully
+                  chosen high quality ingredients to offer you an exceptional flavour treat when enjoying our donuts.
+                </p>
+                <p>We prepare our jams with the best quality fruit without preservatives, flavour enhancers,
+                  artificial colours, or GMO's. We opened our first store in April 2019 at Square One in Mississauga,
+                  our second store in the RBC Path in downtown Toronto. At the same time, our POPUP stores opened at
+                  Pusateri's
+                  downtown, Fifth Avenue in the Bay-Saks Fifth Avenue location and at Pusateri's Bayview Village.</p>
               </div>
             </div>
           </div>
@@ -103,18 +100,13 @@
               </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample">
+              data-bs-parent="#accordionSection">
               <div class="accordion-body">
-                <p>Recent February - March 2021 Donations
-                  March 27, 2021</p>
-                <p>Donation Journal - SickKids - May 27th
-                  June 29, 2020</p>
-                <p>Donation Journal - Juravinski Hospital - Hamilton June 6th
-                  June 8, 2020</p>
-                <p>Donation Journal - rEcess Ontario families - May 23rd
-                  May 25, 2020</p>
-                <p>Donation Journal - Georgian Bay General Midland - May 14th
-                  May 18, 2020</p>
+                <p>Recent February - March 2021 Donations March 27, 2021</p>
+                <p>Donation Journal - SickKids - May 27th June 29, 2020</p>
+                <p>Donation Journal - Juravinski Hospital - Hamilton June 6th June 8, 2020</p>
+                <p>Donation Journal - rEcess Ontario families - May 23rd May 25, 2020</p>
+                <p>Donation Journal - Georgian Bay General Midland - May 14th May 18, 2020</p>
               </div>
             </div>
           </div>
@@ -127,17 +119,21 @@
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample">
+              data-bs-parent="#accordionSection">
               <div class="accordion-body">
                 <strong>Check these out</strong>
-                <img class="d-block w-100" src="assets/img/donut_hive.jpg" alt="img">
+                <p class="text-uppercase text-danger fs-4">Tiramisu</p>
+                <p>Regular price $5.99</p>
+                <p>Coffee cream, Belgian Callebaut white and milk chocolate</p>
+                <p class="text-uppercase text-danger fs-4">Creme Brûlée</p>
+                <p>Regular price $4.99 Vanilla cream and caramelized sugar</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-xxl-3 col-xl-6 col-lg-6 order-xxl-first my-auto">
+      <div class="col-xxl-3 col-xl-6 col-lg-6 order-xxl-first">
         <div id="carouselFirst" class="carousel slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselFirst" data-bs-slide-to="0" class="active"
@@ -170,50 +166,41 @@
           </button>
         </div>
       </div>
-
-      <div class="col-xxl-2 col-xl-6 col-lg-6 my-auto">
+      <div class="col-xxl-2 col-xl-6 col-lg-6 m-0">
         <form class="container">
-          <div class="text fw-bold pb-3">Special requests</div>
+          <div class="text fw-bold pb-3 fs-3">Special requests</div>
+          <div class="row mb-3">Full Name
+            <label for="inputFullName" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10 ps-0 pe-0">
+              <input type="text" class="form-control" id="inputFullName">
+            </div>
+          </div>
           <div class="row mb-3">Email
-            <label for="inputEmail3" class="col-sm-2 col-form-label"></label>
-            <div class="col-sm-10">
-              <input type="email" class="form-control" id="inputEmail3">
+            <label for="inputEmail" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10 ps-0 pe-0">
+              <input type="email" class="form-control" id="inputEmail">
             </div>
           </div>
           <div class="row mb-3">Password
-            <label for="inputPassword3" class="col-sm-2 col-form-label"></label>
-            <div class="col-sm-10">
-              <input type="password" class="form-control" id="inputPassword3">
+            <label for="inputPassword" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10 ps-0 pe-0">
+              <input type="password" class="form-control" id="inputPassword">
             </div>
           </div>
           <div class="row mb-3">City
-            <label for="inputCity3" class="col-sm-2 col-form-label"></label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="inputCity3">
+            <label for="inputCity" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10 ps-0 pe-0">
+              <input type="text" class="form-control" id="inputCity">
             </div>
           </div>
-          <fieldset class="row mb-3">
-            <legend class="col-form-label col-sm-2 pt-0">
-              <div class="col-sm-10">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
-                    checked>
-                  <label class="form-check-label" for="gridRadios1">
-                    Wedding
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                  <label class="form-check-label" for="gridRadios2">
-                    Other occasions
-                  </label>
-                </div>
-              </div>
-            </legend>
-
-          </fieldset>
+          <div class="row mb-3">Cell phone
+            <label for="inputMobile" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10 ps-0 pe-0">
+              <input type="text" class="form-control" id="inputMobile">
+            </div>
+          </div>
           <div class="row mb-3">
-            <div class="col-sm-10">
+            <div class="col ps-0">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck1">
                 <label class="form-check-label" for="gridCheck1">
@@ -228,26 +215,19 @@
     </div>
   </main>
 
-  <footer class="bg-danger-subtle mt-5 row">
+  <footer class="bg-danger-subtle mt-5 mb-0 row">
     <div class="container">
       <div class="row">
-        <footer class="py-5 my-4">
-          <ul class="nav justify-content-center pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-          </ul>
-          <p class="text-center text-muted">© 2023 Company, Inc</p>
-        </footer>
+        <ul class="nav justify-content-center pb-2 mb-2">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Delivery</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2023 Company, Inc</p>
       </div>
     </div>
-
-
   </footer>
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
